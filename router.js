@@ -1,11 +1,12 @@
 import express from "express";
-import { homepage } from "./path.js";
+import { homepage, basicselect } from "./path.js";
 
 
 
 
 function router(app) {
-    app.get('/', homepage)
+    app.get('/', homepage),
+    app.get('/basicselect', basicselect)
 }
 
 export default router;

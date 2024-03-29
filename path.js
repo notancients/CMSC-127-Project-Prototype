@@ -1,5 +1,4 @@
-import { Student } from "./student_model.js";
-
+import { result } from './database.js'
 
 /** 
  *  Name: homepage
@@ -15,12 +14,11 @@ async function homepage(req, res) {
     res.send('This is the homepage.')
 }
 
+async function basicselect(req, res) {
+    res.send(result[0]);
+}
+
 export {
-    saveStudent,
-    updateStudent,
-    removeUser,
-    removeAllUser,
-    getUser,
-    getMembers,
-    homepage
+    homepage,
+    basicselect
 }
