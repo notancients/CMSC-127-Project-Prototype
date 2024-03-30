@@ -1,5 +1,5 @@
 import express from "express";
-import { homepage, basicselect } from "./path.js";
+import { homepage, basicselect } from "../scripts/path.js";
 
 
 

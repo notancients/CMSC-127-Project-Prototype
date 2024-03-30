@@ -6,7 +6,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// app.use(express.static('static_files'));
+// app.use(express.static('static_html'));
+// app.use(express.static('static_js'));
 
 router(app);
 

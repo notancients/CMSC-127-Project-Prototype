@@ -1,4 +1,4 @@
-import { result } from './database.js'
+// import { result } from '../database_controller/database.js'
 
 /** 
  *  Name: homepage
@@ -15,7 +15,8 @@ async function homepage(req, res) {
 }
 
 async function basicselect(req, res) {
-    res.send(result[0]);
+    // res.send(result[0]);
+    res.send('This is the basic select return message.');
 }
 
 export {
