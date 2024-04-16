@@ -6,7 +6,7 @@ CREATE TABLE user (
     user_id integer PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(50),
     first_name VARCHAR(25),
-    last_name VARCHAR(25),
+    last_name VARCHAR(25)
 );
 
 CREATE TABLE food (
@@ -18,7 +18,7 @@ CREATE TABLE food (
 CREATE TABLE food_image (
     food_image_id integer PRIMARY KEY AUTO_INCREMENT,
     food_id integer FOREIGN KEY REFERENCES food(food_id),
-    link VARCHAR(255) NOT NULL,
+    link VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE food_category (
